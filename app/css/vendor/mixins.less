@@ -1,0 +1,139 @@
+//line
+.line (@color : lighten(#000, 30%)) {
+    margin-top: 25px;
+    height: 1px;
+    width: 100%;
+    background: @color;
+
+    &.full-width {
+        width: 100%;
+    }
+}
+
+//button mixin
+.button(@bg: @seccol, @textcol: @wit, @pad: 0.5em 1em) {
+    display: inline-block;
+    padding: @pad;
+    background: @bg;
+    #gradient .vertical(lighten(@bg, 20%), @bg);
+    //@include background-image(radial-gradient(top center, lighten($bg,20%), $bg));
+    color: @textcol;
+    font-family: @font1;
+    font-weight: 500;
+    border: 0;
+    #shadow .box(fade(@zwart, 10%) 0 1px 3px);
+    //@include box-shadow(rgba($black,0.1) 0 1px 3px);
+
+    &:hover,
+    &:focus {
+        background: lighten(@seccol, 10%);
+        color: $ white;
+    }
+
+    &:focus {
+        outline: 1px solid @seccol;
+    }
+
+    &:active {
+        background: lighten(@seccol, 20%);
+    }
+
+    &:disabled {
+        background: darken(@wit, 5%);
+        color: darken(@wit, 25%);
+        cursor: default;
+    }
+}
+
+#border {
+    .bordered(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
+        border-top: solid 1px @top-color;
+        border-left: solid 1px @left-color;
+        border-right: solid 1px @right-color;
+        border-bottom: solid 1px @bottom-color;
+    }
+    .rounded(@radius: 2px) {
+        border-radius: @radius;
+        background-clip: padding-box;
+    }
+
+    .radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+        border-top-right-radius: @topright;
+        border-bottom-right-radius: @bottomright;
+        border-bottom-left-radius: @bottomleft;
+        border-top-left-radius: @topleft;
+    }
+}
+
+#shadow {
+    .drop(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1, @color: #000) {
+        box-shadow: @x-axis @y-axis @blur fadeout(@color, 100-(@alpha*100));
+    }
+    .inner(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4, @color: #000) {
+        box-shadow: inset @horizontal @vertical @blur fadeout(@color, 100-(@alpha*100));
+    }
+    .both(@horizontalOut:0, @verticalOut:1px, @blurOut:2px, @alphaOut: 0.4, @colorOut: #000,@horizontalIn:0, @verticalIn:1px, @blurIn:2px, @alphaIn: 0.4, @colorIn: #000) {
+        box-shadow: @horizontalOut @verticalOut @blurOut fadeout(@colorOut, 100-(@alphaOut*100)), inset @horizontalIn @verticalIn @blurIn fadeout(@colorIn, 100-(@alphaIn*100));
+    }
+    .box(@arguments) {
+        box-shadow: @arguments;
+    }
+    .text(@arguments) {
+        text-shadow: @arguments;
+    }
+    .none() {
+        box-shadow: none;
+    }
+}
+
+#transform {
+	.rotation(@deg:5deg) {
+		transform: rotate(@deg);
+	}
+	.scale(@ratio:1.5) {
+		transform: scale(@ratio);
+	}
+	.translate(@x:0, @y:0) {
+		transform: translate(@x, @y);
+	}
+}
+
+#transition {
+    .all(@duration:0.2s, @ease:ease-out) {
+        transition: all @duration @ease;
+    }
+    .property(@property: width,@delay: 200ms, @ease:ease-out) {
+        transition: @property @delay @ease;
+    }
+    .duration(@duration: 0.2s) {
+        transition-duration: @duration;
+    }
+    .timing() {
+        transition-timing-function: cubic-bezier(0.200, 0.760, 0.595, 0.030); /* custom */
+    }
+}
+
+#animate {
+    .keyframes(@name; @arguments) {
+        @-moz-keyframes @name { @arguments(); }
+        @-webkit-keyframes @name { @arguments(); }
+        @keyframes @name { @arguments(); }
+    }
+
+    .animation(@arguments) {
+        -webkit-animation: @arguments;
+        -moz-animation: @arguments;
+        animation: @arguments;
+    }
+}
+
+#content {
+    .columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+        column-width: @colwidth;
+        column-count: @colcount;
+        column-gap: @colgap;
+        column-rule-color: @columnRuleColor;
+        column-rule-style: @columnRuleStyle;
+        column-rule-width: @columnRuleWidth;
+    }
+}
