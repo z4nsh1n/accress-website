@@ -1,6 +1,7 @@
 //default
 body {
 	#transition .all(0.1s);
+	background: #fff;
 }
 
 h1, h2, h3, h4, h5 {
@@ -14,4 +15,78 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+.footer {
+	color: @footer-text-col;
+	background: url(../images/dropdown-bg.png);
+	margin-top: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.inner-container {
+	margin-left:40px;
+	margin-right: 40px;
+
+}
+
+#topbar {
+	//height: 27px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: url(../images/dropdown-bg.png);
+	a {
+		color: #fff;
+	}
+}
+
+.navbar-default{
+	background-color: @nav-bg-color;
+	border: none;
+
+	font-size: @navtext-size;
+}
+
+.navbar-nav {
+	margin-top: 30px;
+}
+
+.navbar-default .navbar-nav {
+
+	> li > a {
+		color: @navtext-color;
+	}
+}
+
+#video_bad {
+	position: relative;
+}
+
+#weer_widget {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+}
+#speelattr {
+	background: url(../images/speelattr-bg.png);
+	height:730px;
+	margin-top: @panel-margin;
+}
+
+#wedstrijd {
+	margin-top: @panel-margin;
+	background: #e2eded;
+}
+
+#nieuws {
+	margin-top: @panel-margin;
+}
+
+#boschbad_slider {
+	margin-top: @panel-margin;
+}
+
+#banner {
+	margin-top: @panel-margin;
 }
