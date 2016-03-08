@@ -8487,6 +8487,53 @@ a {
 a:hover {
   text-decoration: none;
 }
+#activiteiten {
+  margin-top: 25px;
+}
+.activiteit {
+  background: #fff;
+  margin-bottom: 10px;
+}
+.activiteit img {
+  float: left;
+}
+.activiteit h5 {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.activiteit div {
+  margin-left: 82px;
+}
+.banner {
+  height: 262px;
+}
+.banner-right img {
+  width: 100%;
+  height: 100%;
+}
+.banner-left {
+  background: #aee4e5;
+  padding-right: 0px;
+}
+.banner-left-img {
+  background: url(../images/zwemfeestje.png);
+}
+.btn-below {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  right: auto;
+  bottom: -30px;
+  padding: 11px 10px;
+  background: url(../images/wood-button.png);
+  color: #fff;
+}
+.has-button-below {
+  position: relative;
+}
 .footer {
   color: #fff;
   background: url(../images/dropdown-bg.png);
@@ -8502,7 +8549,7 @@ a:hover {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: url(../images/dropdown-bg.png);
+  background: url(../images/top-wood.png);
 }
 #topbar a {
   color: #fff;
@@ -8518,6 +8565,18 @@ a:hover {
 .navbar-default .navbar-nav > li > a {
   color: #000;
 }
+.nav-tabs {
+  background: #fff;
+  margin-bottom: -21px;
+}
+.nieuws-text {
+  margin-top: 45px;
+}
+.tab-content {
+  background: #fff;
+  padding: 10px 24px;
+  height: 566px;
+}
 #video_bad {
   position: relative;
 }
@@ -8530,6 +8589,12 @@ a:hover {
   background: url(../images/speelattr-bg.png);
   height: 730px;
   margin-top: 48px;
+}
+.speelattr-top {
+  margin-top: 50px;
+}
+.speelattr-text {
+  margin-top: 45px;
 }
 #wedstrijd {
   margin-top: 48px;
