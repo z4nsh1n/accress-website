@@ -1,169 +1,242 @@
 //default
 body {
-	#transition .all(0.1s);
-	background: #fff;
+  #transition .all(0.1s);
+  background: #fff;
 }
 
 h1, h2, h3, h4, h5 {
-	color: @primcol;
+  color: @primcol;
 }
 
 a {
-	color: @primcol;
-	text-decoration: none;
+  color: @primcol;
+  text-decoration: none;
 
-	&:hover {
-		text-decoration: none;
-	}
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 #activiteiten {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 .activiteit {
-	background: #fff;
-	margin-bottom: 10px;
-	img {
-		float: left;
-	}
+  background: #fff;
+  margin-bottom: 10px;
+  img {
+    float: left;
+  }
 
-	h5{
-		display: inline-block;
-		margin-top: 15px;
-		margin-left: 10px;
-		margin-bottom: 0px;
+  h5{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
 
-	}
-	div {
-		margin-left: 82px;
-	}
+  }
+  div {
+    margin-left: 82px;
+  }
 }
 
-	.banner {
-		height: 262px;
-	}
+.banner {
+  height: 262px;
+}
 
-	.banner-right img {
-		width: 100%;
-		height: 100%;
-	}
-	.banner-left {
-		background: #aee4e5;
-		padding-right: 0px;
-	}
-	.banner-left-img {
-		//float: right;
-		background: url(../images/zwemfeestje.png);
-	}
+.banner-right img {
+  width: 100%;
+  height: 100%;
+}
+.banner-left {
+  background: #aee4e5;
+  padding-right: 0px;
+}
+.banner-left-img {
+  //float: right;
+  background: url(../images/zwemfeestje.png);
+}
 
-	.btn-below {
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		left: 50%;
-		right: auto;
-		bottom: -30px;
-		padding: 11px 10px;
-		background: url(../images/wood-button.png);
-		color: #fff;
-	}
+.btn-below {
+  border-radius: 0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  right: auto;
+  bottom: -30px;
+  padding: 11px 10px; //18px
+  background: url(../images/wood-button.png);
+  color: #fff;
+  font-weight: bold;
+}
 
-	.has-button-below {
-		position: relative;
-	}
-	.footer {
-		color: @footer-text-col;
-		background: url(../images/dropdown-bg.png);
-		margin-top: 60px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.inner-container {
-		margin-left:40px;
-		margin-right: 40px;
+.has-button-below {
+  position: relative;
+}
+.footer {
+  color: @footer-text-col;
+  background: url(../images/dropdown-bg.png);
+  margin-top: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.inner-container {
+  margin-left:40px;
+  margin-right: 40px;
 
-	}
+}
 
-	#topbar {
-		//height: 27px;
-		width: 100%;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		background: url(../images/top-wood.png); //dropdown-bg.png);
-		a {
-			color: #fff;
-		}
-	}
+#topbar {
+  //height: 27px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url(../images/top-wood.png); //dropdown-bg.png);
+  a {
+    color: #fff;
+  }
+}
 
-	.navbar-default{
-		background-color: @nav-bg-color;
-		border: none;
+.navbar-default{
+  background-color: @nav-bg-color;
+  border: none;
 
-		font-size: @navtext-size;
-	}
+  font-size: @navtext-size;
+}
 
-	.navbar-nav {
-		margin-top: 30px;
-	}
+.navbar-nav {
+  margin-top: 30px;
+}
 
-	.navbar-default .navbar-nav {
+.navbar-default .navbar-nav {
 
-		> li > a {
-			color: @navtext-color;
-		}
-	}
+  > li > a {
+    color: @navtext-color;
+  }
+}
 
-	.nav-tabs {
-		background: #fff;
-		margin-bottom: -21px;
-	}
-	.nieuws-text {
-		margin-top: 45px;
-	}
+.nav-tabs {
+  background: url(../images/icons/icon-background.png); //#fff;
+  margin-bottom: -10px;
+}
+.nav-tabs.nav-justified > li > a:hover{
+  background: none;
+  border: none;
+}
+.nieuws-text {
+  margin-top: 45px;
+}
 
-	.tab-content{
-		background: #fff;
-		padding: 10px 24px;
-		height: 566px;
-	}
-	#video_bad {
-		position: relative;
-	}
+.tab-content{
+  background: #fff;
+  padding: 10px 24px;
+  height: 566px;
+}
+#video_bad {
+  position: relative;
+}
 
-	#weer_widget {
-		position: absolute;
-		bottom: 40px;
-		left: 40px;
-	}
-	#speelattr {
-		background: url(../images/speelattr-bg.png);
-		height:730px;
-		margin-top: @panel-margin;
-	}
+#weer_widget {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  background: #0076bd;
+  opacity: .8;
+}
+img.weer-icon {
+  margin: 10px;
+}
 
-	.speelattr-top {
-		margin-top: 50px;
-	}
+.weer-icon-small {
+  width:16px;
+  //margin:5px;
 
-	.speelattr-text {
-		margin-top: 45px;
-	}
+}
+.weer-dag:nth-child(1) {
+  border-right: 3px solid #fff;
 
-	#wedstrijd {
-		margin-top: @panel-margin;
-		background: #e2eded;
-	}
+}
+.weer-dag:nth-child(2) {
+  border-right: 3px solid #fff;
 
-	#nieuws {
-		margin-top: @panel-margin;
-	}
+}
 
-	#boschbad_slider {
-		margin-top: @panel-margin;
-	}
+.weer-dagen {
+  border-top:3px solid #fff;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
-	#banner {
-		margin-top: @panel-margin;
-	}
+#temp {
+  font-size: 24px;
+}
 
+#weer-geopend {
+  font-size: 10px;
+}
+#speelattr {
+  background: url(../images/speelattr-bg.png);
+  height:730px;
+  padding: 40px;
+  margin-top: @panel-margin;
+}
+
+.speelattr-top {
+  margin-top: 50px;
+}
+
+.speelattr-text {
+  margin-top: 45px;
+}
+
+#wedstrijd {
+  margin-top: @panel-margin;
+  background: #e2eded;
+}
+
+#nieuws {
+  margin-top: @panel-margin;
+}
+
+#boschbad_slider {
+  margin-top: @panel-margin;
+}
+
+#banner {
+  margin-top: @panel-margin;
+}
+
+.container-fotowedstrijd {
+  margin-right: 32px;
+  padding-bottom: 90px;
+  label {
+    display: block;
+    color: #1373a5;
+  }
+  input {
+    width: 100%;
+  }
+  form .row{
+    padding-top: 12px;
+  }
+  button {
+    width: 100%;
+    margin-top: 15px;
+    background: linear-gradient(#fff, #e0e0e0);
+    border: 1px solid #000;
+    border-radius: 0px;
+  }
+
+  .btn-below {
+    padding: 10px 40px;
+  }
+
+
+}
+
+#btn-verstuur {
+  padding: 10px 40px;
+}

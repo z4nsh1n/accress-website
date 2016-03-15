@@ -8521,6 +8521,7 @@ a:hover {
   background: url(../images/zwemfeestje.png);
 }
 .btn-below {
+  border-radius: 0px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -8530,6 +8531,7 @@ a:hover {
   padding: 11px 10px;
   background: url(../images/wood-button.png);
   color: #fff;
+  font-weight: bold;
 }
 .has-button-below {
   position: relative;
@@ -8566,8 +8568,12 @@ a:hover {
   color: #000;
 }
 .nav-tabs {
-  background: #fff;
-  margin-bottom: -21px;
+  background: url(../images/icons/icon-background.png);
+  margin-bottom: -10px;
+}
+.nav-tabs.nav-justified > li > a:hover {
+  background: none;
+  border: none;
 }
 .nieuws-text {
   margin-top: 45px;
@@ -8584,10 +8590,38 @@ a:hover {
   position: absolute;
   bottom: 40px;
   left: 40px;
+  color: #fff;
+  background: #0076bd;
+  opacity: .8;
+}
+img.weer-icon {
+  margin: 10px;
+}
+.weer-icon-small {
+  width: 16px;
+}
+.weer-dag:nth-child(1) {
+  border-right: 3px solid #fff;
+}
+.weer-dag:nth-child(2) {
+  border-right: 3px solid #fff;
+}
+.weer-dagen {
+  border-top: 3px solid #fff;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#temp {
+  font-size: 24px;
+}
+#weer-geopend {
+  font-size: 10px;
 }
 #speelattr {
   background: url(../images/speelattr-bg.png);
   height: 730px;
+  padding: 40px;
   margin-top: 48px;
 }
 .speelattr-top {
@@ -8608,5 +8642,32 @@ a:hover {
 }
 #banner {
   margin-top: 48px;
+}
+.container-fotowedstrijd {
+  margin-right: 32px;
+  padding-bottom: 90px;
+}
+.container-fotowedstrijd label {
+  display: block;
+  color: #1373a5;
+}
+.container-fotowedstrijd input {
+  width: 100%;
+}
+.container-fotowedstrijd form .row {
+  padding-top: 12px;
+}
+.container-fotowedstrijd button {
+  width: 100%;
+  margin-top: 15px;
+  background: linear-gradient(#fff, #e0e0e0);
+  border: 1px solid #000;
+  border-radius: 0px;
+}
+.container-fotowedstrijd .btn-below {
+  padding: 10px 40px;
+}
+#btn-verstuur {
+  padding: 10px 40px;
 }
 /*# sourceMappingURL=main.css.map */
