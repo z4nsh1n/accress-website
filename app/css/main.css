@@ -8469,84 +8469,6 @@ button.close {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-body {
-  transition: all 0.1s ease-out;
-  background: #fff;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #1373a5;
-}
-a {
-  color: #1373a5;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-#activiteiten {
-  margin-top: 25px;
-}
-.activiteit {
-  background: #fff;
-  margin-bottom: 10px;
-}
-.activiteit img {
-  float: left;
-}
-.activiteit h5 {
-  display: inline-block;
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-bottom: 0px;
-}
-.activiteit div {
-  margin-left: 82px;
-}
-.banner {
-  height: 262px;
-}
-.banner-right img {
-  width: 100%;
-  height: 100%;
-}
-.banner-left {
-  background: #aee4e5;
-  padding-right: 0px;
-}
-.banner-left-img {
-  background: url(../images/zwemfeestje.png);
-}
-.btn-below {
-  border-radius: 0px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 50%;
-  right: auto;
-  bottom: -30px;
-  padding: 11px 10px;
-  background: url(../images/wood-button.png);
-  color: #fff;
-  font-weight: bold;
-}
-.has-button-below {
-  position: relative;
-}
-.footer {
-  color: #fff;
-  background: url(../images/dropdown-bg.png);
-  margin-top: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.inner-container {
-  margin-left: 40px;
-  margin-right: 40px;
-}
 #topbar {
   width: 100%;
   padding-top: 10px;
@@ -8575,7 +8497,61 @@ a:hover {
   background: none;
   border: none;
 }
-.nieuws-text {
+#activiteiten {
+  margin-top: 25px;
+}
+.activiteit {
+  background: #fff;
+  margin-bottom: 10px;
+}
+.activiteit img {
+  float: left;
+}
+.activiteit h5 {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.activiteit div {
+  margin-left: 82px;
+}
+#banner {
+  margin-top: 48px;
+}
+.banner-right img {
+  width: 100%;
+  height: 100%;
+}
+.banner-left {
+  background: #aee4e5;
+  padding-right: 0px;
+}
+.banner-left-img,
+.banner-right-img {
+  height: 100%;
+}
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+#speelattr {
+  background: url(../images/speelattr-bg.png);
+  background-size: cover;
+  padding: 40px;
+  margin-top: 48px;
+}
+.speelattr-top {
+  margin-top: 50px;
+}
+.speelattr-text {
   margin-top: 45px;
 }
 .tab-content {
@@ -8583,8 +8559,36 @@ a:hover {
   padding: 10px 24px;
   height: 566px;
 }
-#video_bad {
-  position: relative;
+#wedstrijd {
+  margin-top: 48px;
+  background: #e2eded;
+}
+.container-fotowedstrijd {
+  margin-right: 32px;
+  padding-bottom: 90px;
+}
+.container-fotowedstrijd label {
+  display: block;
+  color: #1373a5;
+}
+.container-fotowedstrijd input {
+  width: 100%;
+}
+.container-fotowedstrijd form .row {
+  padding-top: 12px;
+}
+.container-fotowedstrijd button {
+  width: 100%;
+  margin-top: 15px;
+  background: linear-gradient(#fff, #e0e0e0);
+  border: 1px solid #000;
+  border-radius: 0px;
+}
+.container-fotowedstrijd .btn-below {
+  padding: 10px 40px;
+}
+#btn-verstuur {
+  padding: 10px 40px;
 }
 #weer_widget {
   position: absolute;
@@ -8618,56 +8622,61 @@ img.weer-icon {
 #weer-geopend {
   font-size: 10px;
 }
-#speelattr {
-  background: url(../images/speelattr-bg.png);
-  height: 730px;
-  padding: 40px;
-  margin-top: 48px;
+body {
+  transition: all 0.1s ease-out;
+  background: #fff;
 }
-.speelattr-top {
-  margin-top: 50px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #1373a5;
 }
-.speelattr-text {
-  margin-top: 45px;
+a {
+  color: #1373a5;
+  text-decoration: none;
 }
-#wedstrijd {
-  margin-top: 48px;
-  background: #e2eded;
+a:hover {
+  text-decoration: none;
+}
+.btn-below {
+  border-radius: 0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  right: auto;
+  bottom: -30px;
+  padding: 11px 10px;
+  background: url(../images/wood-button.png);
+  color: #fff;
+  font-weight: bold;
+}
+.has-button-below {
+  position: relative;
+}
+.footer {
+  color: #fff;
+  background: url(../images/dropdown-bg.png);
+  margin-top: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.inner-container {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 #nieuws {
   margin-top: 48px;
 }
+.nieuws-text {
+  margin-top: 45px;
+}
+#video_bad {
+  position: relative;
+}
 #boschbad_slider {
   margin-top: 48px;
-}
-#banner {
-  margin-top: 48px;
-}
-.container-fotowedstrijd {
-  margin-right: 32px;
-  padding-bottom: 90px;
-}
-.container-fotowedstrijd label {
-  display: block;
-  color: #1373a5;
-}
-.container-fotowedstrijd input {
-  width: 100%;
-}
-.container-fotowedstrijd form .row {
-  padding-top: 12px;
-}
-.container-fotowedstrijd button {
-  width: 100%;
-  margin-top: 15px;
-  background: linear-gradient(#fff, #e0e0e0);
-  border: 1px solid #000;
-  border-radius: 0px;
-}
-.container-fotowedstrijd .btn-below {
-  padding: 10px 40px;
-}
-#btn-verstuur {
-  padding: 10px 40px;
 }
 /*# sourceMappingURL=main.css.map */
