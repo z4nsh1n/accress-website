@@ -9,7 +9,8 @@ module.exports = function(grunt) {
             },
             dev: {
                 files: {
-                    'app/css/main.css': 'app/css/main.less'
+                    'app/css/main.css': 'app/css/main.less',
+
                 },
                 options: {
                     compress: false,
@@ -17,6 +18,20 @@ module.exports = function(grunt) {
                     outputSourceFiles: true,
                     sourceMapFilename: 'app/css/main.css.map',
                     sourceMapURL: '/css/main.css.map',
+                    sourceMapRootpath: '/'
+                }
+
+            },
+            dev2: {
+                files:{
+                    'app/css/activiteiten.css': 'app/css/activiteit.less'
+                },
+                options: {
+                    compress: false,
+                    sourceMap: true,
+                    outputSourceFiles: true,
+                    sourceMapFilename: 'app/css/activiteiten.css.map',
+                    sourceMapURL: '/css/activiteiten.css.map',
                     sourceMapRootpath: '/'
                 }
             },
@@ -137,7 +152,17 @@ module.exports = function(grunt) {
 						inline: false
 					}
 				}
-			}
+			},
+            activiteiten: {
+                src: 'app/css/activiteiten.css',
+                dest: 'app/css/activiteiten.css',
+                options: {
+                    map: {
+                        prev: 'app/css/',
+                        inline: false
+                    }
+                }
+            },
 		},
 
         watch: {
@@ -166,7 +191,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', ['watch']);
 
     //build for the first time
-    grunt.registerTask('compile', ['less:dev', 'autoprefixer:main']);
+    grunt.registerTask('compile', ['less:dev', 'less:dev2', 'autoprefixer:main','autoprefixer:activiteiten']);
 
     // simple build task
     grunt.registerTask('build', [
