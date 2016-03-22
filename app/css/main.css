@@ -8487,9 +8487,15 @@ button.close {
 }
 .navbar-nav {
   margin-top: 30px;
+  font-family: "Open Sans";
+  font-weight: 700;
 }
 .navbar-default .navbar-nav > li > a {
   color: #000;
+}
+.dropdown-menu > li > a {
+  font-family: "Open Sans";
+  font-weight: 700;
 }
 .nav-tabs {
   background: url(../images/icons/icon-background.png);
@@ -8498,6 +8504,9 @@ button.close {
 .nav-tabs.nav-justified > li > a:hover {
   background: none;
   border: none;
+}
+.tab-content {
+  font-family: "Open Sans";
 }
 #activiteiten {
   margin-top: 25px;
@@ -8627,6 +8636,7 @@ img.weer-icon {
 body {
   transition: all 0.1s ease-out;
   background: #fff;
+  font-family: "Open Sans";
 }
 h1,
 h2,
@@ -8653,7 +8663,8 @@ a:hover {
   padding: 11px 10px;
   background: url(../images/wood-button.png);
   color: #fff;
-  font-weight: bold;
+  font-family: "Open Sans";
+  font-weight: 700;
 }
 .has-button-below {
   position: relative;
