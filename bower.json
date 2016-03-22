@@ -21,6 +21,7 @@
     "html5shiv": "~3.7.2",
     "respond": "~1.4.2",
     "modernizr": "~2.8.3",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "owl-carousel2#^2.0.0-beta.3"
   }
 }

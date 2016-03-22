@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import "../../bower_components/owl.carousel/dist/assets/owl.carousel.css";
+@import "../../bower_components/owl.carousel/dist/assets/owl.carousel.css";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8678,5 +8680,26 @@ a:hover {
 }
 #boschbad_slider {
   margin-top: 48px;
+}
+.slide-box {
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  margin: 10% 30%;
+  padding: 10px;
+}
+.slide-box-item {
+  position: relative;
+}
+.slide-box img {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.owl-item {
+  background: url(http://placehold.it/1230x400);
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
