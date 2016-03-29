@@ -8606,7 +8606,7 @@ button.close {
   bottom: 40px;
   left: 40px;
   color: #fff;
-  background: #0076bd;
+  background: rgba(0, 118, 189, 0.8);
   opacity: .8;
 }
 img.weer-icon {
