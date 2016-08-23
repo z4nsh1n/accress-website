@@ -7,3 +7,4 @@
 - Run `grunt compile` for building the app for the first time
 - Run `grunt dev` to start watching your project
 - Run `grunt build` to build the dist folder
+![homepage](homepage.png)
